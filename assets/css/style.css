@@ -73,8 +73,9 @@ li {
     height: 80px;
 }
 
-.footer, .footer > h1 {
-    background-color: #beaca7;
+.footer, .footer > h2 {
+    background-color: #3f3130;
+    color: #eed7d1;
 }
 
 .main {
@@ -84,15 +85,15 @@ li {
 }
 
 .main, .main > p {
-    background-color: #c7c3be;
+    background-color: #eed7d1;
 }
 
-.aside1, .aside1 > h2, .aside2, .aside2 > h2 {
-    background-color: #382826;
-    color: #eed7d1;
+.sidebar1, .sidebar1 > h2, .sidebar2, .sidebar2 > h2 {
+    background-color: #eed7d1;
+    color: #3e1515;
 }
 
-#kanji-vertical{
+#kanji-text{
     font-family: 'Yuji Syuku', serif;
     color: #eed7d1;
     background-color: rgba(62, 21, 21, 0);
@@ -101,7 +102,7 @@ li {
     text-align: center;
 }
 
-#kanji-box-vertical{
+#kanji-box{
     background-color: rgba(23, 9, 8, 0.6);
     width: 140px;
     height: 390px;
@@ -115,11 +116,11 @@ li {
         flex: 3;
     }
 
-    .aside1{
+    .sidebar1{
         order: 1;
     }
 
-    .aside2{
+    .sidebar2{
         order: 2;
     }
 
