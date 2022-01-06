@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Yuji+Syuku&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    color: #3e1515;
+    background-color: #eed7d1;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1, h2, h3, ul{
+    font-family: 'Yuji Syuku', serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+    height: 120px;
+}
+
+.header, .header>h1 {
+    background-color: #d6c1bc;
+}
+
+.footer{
+    height: 80px;
+}
+
+.footer, .footer>h1 {
+    background-color: #beaca7;
+}
+
+.main {
+    text-align: left;
+    height: 300px;
+    font-size: 24px;
+}
+
+.main, .main>p {
+    background-color: #c7c3be;
+}
+
+.aside1, .aside1>h1 {
+    background-color: #e3c5a7;
+}
+
+.aside2, .aside2>h1 {
+    background-color: #d6bcb5;
+}
+
+@media all and (min-width: 800px){
+    .main {
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .main{
+        order: 2;
+    }
+
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+    .aside {
+        flex: 1;
+    }
+}

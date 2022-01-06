@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Yuji+Syuku&display=swap');
 
-*{
+* {
     margin:0;
     padding:0;
     border:0;
@@ -8,40 +8,72 @@
     background-color: #eed7d1;
 }
 
-body{
+body {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-h1, h2, h3, ul{
-    font-family: 'Yuji Syuku', serif;
+a {
+    text-decoration: none;
 }
 
-.wrapper{
+h1, h2, h3, ul, li {
+    font-family: 'Yuji Syuku', serif;
+    background-color: rgba(163, 143, 138, 0);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.flexbox {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
 }
 
-.wrapper>*{
-    padding: 10px;
-    margin: 10px;
+#nav {
+    right: 10px;
+    top: 3px;
+    position: absolute;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+li {
+    margin-right: 20px;
+}
+
+.flexbox > * {
     flex: 1 100%;
-    border-radius: 10px;
 }
 
 .header {
-    height: 120px;
+    height:600px;
+    width: 100%;
+    text-align: left;
+    background: url('../images/hero-image.webp') no-repeat center center;
 }
 
-.header, .header>h1 {
-    background-color: #d6c1bc;
+.header > h1, .header > h2 {
+    margin: 10px;
+    line-height: 0.9;
 }
 
-.footer{
+.header > h1 {
+    font-size: 240%;
+}
+
+.footer {
     height: 80px;
 }
 
-.footer, .footer>h1 {
+.footer, .footer > h1 {
     background-color: #beaca7;
 }
 
@@ -51,16 +83,31 @@ h1, h2, h3, ul{
     font-size: 24px;
 }
 
-.main, .main>p {
+.main, .main > p {
     background-color: #c7c3be;
 }
 
-.aside1, .aside1>h1 {
-    background-color: #e3c5a7;
+.aside1, .aside1 > h2, .aside2, .aside2 > h2 {
+    background-color: #382826;
+    color: #eed7d1;
 }
 
-.aside2, .aside2>h1 {
-    background-color: #d6bcb5;
+#kanji-vertical{
+    font-family: 'Yuji Syuku', serif;
+    color: #eed7d1;
+    background-color: rgba(62, 21, 21, 0);
+    font-size: 700%;
+    line-height: 1.1;
+    text-align: center;
+}
+
+#kanji-box-vertical{
+    background-color: rgba(23, 9, 8, 0.6);
+    width: 140px;
+    height: 390px;
+    bottom: -110px;
+    left: 10px;
+    position: relative;
 }
 
 @media all and (min-width: 800px){
