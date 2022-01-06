@@ -25,6 +25,14 @@ h1 {
     text-transform: uppercase;
 }
 
+.central_header {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
 .flexbox {
     display: flex;
     flex-flow: row wrap;
@@ -106,9 +114,9 @@ li {
     background-color: rgba(23, 9, 8, 0.6);
     width: 140px;
     height: 390px;
-    bottom: -110px;
+    position: absolute;
+    bottom: 350px;
     left: 10px;
-    position: relative;
 }
 
 @media all and (min-width: 800px){
@@ -137,4 +145,24 @@ li {
     .aside {
         flex: 1;
     }
+}
+
+@media screen and (max-width: 700px){
+    #nav {
+        left: 10px;
+        position: relative;
+    }
+    
+    #nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+        list-style-type: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    li {
+        margin-right: 20px;
+    }
+
 }
