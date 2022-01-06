@@ -40,7 +40,7 @@ p {
 
 #nav {
     width: 370px;
-    right: 10px;
+    right: 0px;
     top: 3px;
     position: absolute;
 }
@@ -54,7 +54,8 @@ p {
 }
 
 li {
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
 .flexbox > * {
@@ -145,7 +146,7 @@ li {
 }
 
 @media all and (min-width: 600px){
-    .aside {
+    .side {
         flex: 1;
     }
 }
@@ -165,6 +166,7 @@ li {
     }
     
     li {
+        margin-left: 0px;
         margin-right: 20px;
     }
 
